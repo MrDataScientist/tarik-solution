@@ -2,7 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-import PersonList from './Components/componentone'
+import PersonList from './Components/item-list'
 
 function App() {
   return (
