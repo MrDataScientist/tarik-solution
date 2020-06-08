@@ -1,0 +1,40 @@
+.header {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  background-color:   white;
+  border: 2px solid black;
+  border-radius: 8px;
+
+  .logo-container {
+    height: 100%;
+    width: 70px;
+    padding: 13px;
+  }
+
+  .options {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    .option {
+      padding: 10px 15px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #ddd;
+        color: black;
+     }
+    }
+    .shop{
+      padding: 10px 15px;
+      cursor: pointer;
+      background-color: dodgerblue;
+      color: white;
+    }
+  }
+}

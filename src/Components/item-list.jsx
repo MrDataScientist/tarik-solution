@@ -2,6 +2,8 @@ import React from 'react';
 
 import axios from 'axios';
 
+import './collection-items.scss';
+
 export default class ItemList extends React.Component {
   state = {
     items: []
@@ -19,7 +21,12 @@ export default class ItemList extends React.Component {
     return (
       <ul>
         { this.state.items.map(item => 
-        <li>{item.name} : {item.description}</li>
+       
+        <li>
+     
+       <img src={item.imagePath} alt="imae test" />
+          {item.name.toUpperCase()} : {item.description}</li>
+
         )}
       </ul>
     )

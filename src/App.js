@@ -1,15 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 import PersonList from './Components/item-list'
+import Header from './Components/header/header';
+
+import { Switch, Route } from 'react-router-dom';
+
+import { connect } from 'react-redux';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <PersonList  />
-      </header>
+       <Header />
+        <Switch>
+          <Route exact path='/' component={PersonList} />
+        </Switch>
     </div>
   );
 }
