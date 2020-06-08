@@ -2,6 +2,10 @@ import React from 'react';
 
 import axios from 'axios';
 
+import { Carousel } from 'react-responsive-carousel';
+
+import "react-responsive-carousel/lib/styles/carousel.min.css"; 
+
 export default class ItemList extends React.Component {
   state = {
     items: []
@@ -16,12 +20,17 @@ export default class ItemList extends React.Component {
   }
 
   render() {
+    let items = this.state.items
+    console.log('items:', items)
     return (
-      <ul>
-        { this.state.items.map(item => 
-        <li>{item.name} : {item.description}</li>
-        )}
-      </ul>
+      <Carousel autoPlay>
+        { this.state.items.map(item =>
+          <div>
+            <img alt={item.name} src={item.imagePath} />
+            <p className="legend">{item.name}</p>
+          </div>
+          )}
+      </Carousel>
     )
   }
 }

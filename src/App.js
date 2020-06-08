@@ -4,12 +4,13 @@ import './App.css';
 
 import PersonList from './Components/item-list'
 
+import Carousel from './Components/carousel';
+//       <header className="App-header" />
+
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <PersonList  />
-      </header>
+    <div className="Carousel">
+      <PersonList  />
     </div>
   );
 }
