@@ -25,10 +25,12 @@ export default class ItemList extends React.Component {
     return (
       <Carousel autoPlay>
         { this.state.items.map(item =>
+        item.items.map(item =>
           <div>
-            <img alt={item.name} src={item.imagePath} />
-            <p className="legend">{item.name}</p>
+            <img alt={item.category} src={item.description} />
+            <p className="legend">{item.category}</p>
           </div>
+        )
           )}
       </Carousel>
     )
