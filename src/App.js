@@ -4,13 +4,15 @@ import './App.css';
 
 import PersonList from './Components/item-list'
 
+import ItemList2 from './Components/item-list2'
+
 import Carousel from './Components/carousel';
 //       <header className="App-header" />
 
 function App() {
   return (
     <div className="Carousel">
-      <PersonList  />
+      <ItemList2  />
     </div>
   );
 }
