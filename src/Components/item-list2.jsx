@@ -26,17 +26,32 @@ export default class ItemList2 extends React.Component {
 <div>
         { items.map(item =>
 
-        <div>
-        <p>{item.name}</p>
-        <img alt={item.name} src={item.imagePath} />
-        <p>{item.price} €</p>
+        <div> 
+          
+
+
+          <table>
+        <tr>
+        <th></th>
+        <th> {item.name} </th>
+        </tr>
+
+        <tr>
+          <td></td>
+          <td><img alt={item.name} src={item.imagePath} /></td>
+        </tr>
 
         { item.items.map(item =>
-            <div>
-            <p>{item.category}</p>
-            <p >{item.description}</p>
-            </div>
+              <tr><td>{item.category.toUpperCase()}</td>
+              <td>{item.description}</td></tr>
         )}
+      </table>
+
+
+
+
+        <p>ab € {item.price},-</p>
+
         </div>
 
           )}

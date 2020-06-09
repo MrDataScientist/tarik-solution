@@ -7,6 +7,9 @@ import PersonList from './Components/item-list'
 import ItemList2 from './Components/item-list2'
 
 import Carousel from './Components/carousel';
+
+import Table from './Components/table'
+
 //       <header className="App-header" />
 
 function App() {
