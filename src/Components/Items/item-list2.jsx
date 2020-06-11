@@ -46,8 +46,10 @@ export default class ItemList2 extends React.Component {
           <td><Image><img alt={item.name} src={item.imagePath} /></Image></td>
         </tr>
 
-
-
+        <Description>
+          <td></td>
+          <td>{item.description}</td>
+        </Description>
 
           { item.items.map(item =>
           <Description>

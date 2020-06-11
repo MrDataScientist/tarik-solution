@@ -69,6 +69,7 @@ export const Image = styled.div`
 `
 
 export const Description = styled.tr`
-  font-size: 14px;
+  font-size: 12px;
   height: 48px;
+  text-align: left;
 `
