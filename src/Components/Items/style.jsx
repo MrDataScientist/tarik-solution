@@ -1,8 +1,5 @@
-import React from 'react'
 import styled from 'styled-components'
 import * as palette from '../../styles/palette'
-import * as layersConfig from '../../styles/layersConfig'
-import { Button, IconButton } from '@material-ui/core'
 
 export const Wrap = styled.div `
 height: 100%;
@@ -18,8 +15,8 @@ font-size: 11px;
 text-transform: uppercase;
 letter-spacing: 2.5px;
 font-weight: 500;
-color: ${palette.white}; // TODO: change here
-background-color: ${palette.primaryLightRed}; // TODO: change here
+color: ${palette.white};
+background-color: ${palette.primaryLightRed};
 border: none;
 
 box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
@@ -37,10 +34,23 @@ outline: none;
 
 export const ItemTable = styled.table`
   font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
+  
   background-color: black !important;
   color: white;
+
+
+  width: 100%;  
+  border-collapse: collapse;
+  border: 1px solid black;
+
+  th, td
+{
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid ${palette.black}; // TODO: border-bottom: 1px solid #ddd;
+}
+
+
 `
 export const Price = styled.p`
   font-family: arial, sans-serif;
@@ -48,4 +58,17 @@ export const Price = styled.p`
   color: white;
   margin: inherit;
   padding: 2rem;
+`
+
+export const Image = styled.div`
+  border: 1px solid  ${palette.black};
+  border-radius: 4px;
+  padding: 5px;
+  width: 330px;
+  height: 205px;
+`
+
+export const Description = styled.tr`
+  font-size: 14px;
+  height: 48px;
 `

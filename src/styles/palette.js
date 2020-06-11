@@ -15,13 +15,11 @@ module.exports = {
   gray: '#E5E5E5',
   safeGreen: '#a3bab7',
   grey: '#616771',
-
   // Secondary colors
   plum: '#C3D1EC',
   wood: '#99827A',
   chalk: '#E4E2D9',
   whisper: '#F8F8F8',
-
   // Specific colors
   primaryBackground: '#E7EEEF',
   PrimaryPaleOrange: '#fff8ea',

@@ -5,7 +5,9 @@ import {
   BuyBtn,
   ItemTable,
   Price,
-  Wrap
+  Wrap,
+  Image,
+  Description
 } from './style'
 
 export default class ItemList2 extends React.Component {
@@ -27,7 +29,7 @@ export default class ItemList2 extends React.Component {
 
   render() {
    const items = this.state.items
-   //console.log('items:', items)
+
     return (
 <div style={{display: 'flex'}}>
         { items.map(item =>
@@ -41,17 +43,18 @@ export default class ItemList2 extends React.Component {
 
         <tr>
           <td></td>
-          <td><img alt={item.name} src={item.imagePath} /></td>
+          <td><Image><img alt={item.name} src={item.imagePath} /></Image></td>
         </tr>
 
 
 
 
           { item.items.map(item =>
-          <tr>
-            <td>{item.category}</td>
+          <Description>
+            {/* <td>{item.category}</td> */}
+                  <td />
                   <td>{item.description}</td>
-                  </tr>
+                  </Description>
           )}
 
 
